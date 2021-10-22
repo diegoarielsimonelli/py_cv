@@ -1,0 +1,206 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;0,700;1,300&display=swap");
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css");
+body {
+  max-height: 100vh; }
+
+h1 {
+  text-transform: uppercase;
+  font-size: 2.5rem;
+  font-weight: 500;
+  margin-bottom: .5rem;
+  color: black;
+  text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.158); }
+
+h2 {
+  text-transform: uppercase;
+  font-size: 1.5rem;
+  color: red;
+  margin: 1rem 0;
+  text-shadow: 2px 1.5px 2px rgba(0, 0, 0, 0.158); }
+
+h3 {
+  font-size: 1.3rem; }
+
+p {
+  font-size: 1.2rem;
+  line-height: 25px; }
+  p span {
+    text-decoration: underline;
+    font-size: 1.2rem;
+    font-weight: 500; }
+  p a {
+    font-size: 1.2rem; }
+
+header {
+  text-align: center; }
+
+.grid {
+  display: grid;
+  grid-template-columns: 35% 65%;
+  grid-template-rows: 1fr auto;
+  grid-template-areas: "aside main" "footer footer";
+  padding: 1rem;
+  background-color: rgba(97, 100, 143, 0.205);
+  margin: 0.5rem;
+  border-radius: 5px;
+  max-width: 700px;
+  margin: auto; }
+
+.aside {
+  background-color: #f8f8f8; }
+
+.aside {
+  grid-area: aside;
+  padding: 1rem; }
+  .aside .img_cv {
+    width: 80%;
+    border-radius: 5%;
+    text-align: center;
+    margin: auto;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.158); }
+
+.main {
+  grid-area: main;
+  padding: 1rem; }
+
+.secciones {
+  background-color: rgba(211, 13, 13, 0.87);
+  color: white;
+  border-radius: 5px;
+  padding: 0.5rem;
+  text-align: center;
+  font-weight: 300; }
+
+h2 i {
+  font-size: 120%;
+  margin-right: 5px; }
+
+.front {
+  background-color: rgba(211, 13, 13, 0.87);
+  padding: 1px 0 10px 0;
+  border-radius: 5px; }
+  .front h2 {
+    font-size: 25px;
+    font-weight: 500;
+    text-shadow: 1px 1px 2px #505050; }
+
+.icons__tec {
+  display: flex;
+  justify-content: space-evenly; }
+  .icons__tec div {
+    display: flex;
+    align-items: center;
+    padding: 5px 0 0 25px;
+    width: 33%;
+    justify-content: flex-start; }
+    .icons__tec div p {
+      margin-left: 5px;
+      color: white;
+      font-size: 1rem;
+      font-weight: 500;
+      text-shadow: 1px 1px 2px #505050; }
+
+.cursos,
+.terciaria,
+.secundaria {
+  margin-left: 3rem;
+  padding: 1rem 0;
+  text-transform: uppercase;
+  text-shadow: 2px 1.5px 2px rgba(0, 0, 0, 0.158); }
+
+.items {
+  font-weight: 700;
+  margin-bottom: 0.2rem; }
+
+.redes ul {
+  display: flex;
+  justify-content: center; }
+  .redes ul li {
+    margin-left: 1rem;
+    font-size: 1.5rem; }
+
+.redes ul li a i {
+  font-size: 200%;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin-top: 0.5rem; }
+
+.copy p a {
+  transition: all 0.5s; }
+
+.copy p a:hover {
+  color: black; }
+
+.redes ul li i:hover {
+  color: black; }
+
+p.cursos, p.secundaria, p.terciaria {
+  font-weight: 300;
+  text-decoration: none;
+  color: rgba(211, 13, 13, 0.87); }
+
+p.cursos span, p.secundaria span, p.terciaria span {
+  text-decoration: none; }
+
+.experiencia_laboral h3 {
+  margin-bottom: 0.5rem;
+  margin-top: 1.8rem; }
+
+.conocimiento div {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly; }
+
+.conocimiento div img {
+  width: 15%;
+  margin: 0 5px 5px 5px; }
+
+.secciones .download {
+  color: white;
+  font-size: 90%;
+  transition: all .5s; }
+
+.secciones .download:hover {
+  color: #a6caf3; }
+
+@media (max-width: 600px) {
+  .grid {
+    grid-template-columns: 40% 60%; }
+  .aside img {
+    width: 100%; } }
+
+@media (max-width: 400px) {
+  .grid {
+    grid-template-columns: 50% 50%; }
+  h1 {
+    font-size: 1.5rem; }
+  h2 {
+    font-size: 1.2rem; } }
+
+footer {
+  grid-area: footer;
+  background-color: rgba(211, 13, 13, 0.87);
+  color: white;
+  font-weight: 300;
+  font-style: italic;
+  font-size: 1.2rem;
+  padding: 0.3rem;
+  text-align: center; }
+
+footer a {
+  color: white;
+  text-decoration: underline; }
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+  font-size: 62.5%; }
+
+li {
+  list-style-type: none; }
+
+a {
+  color: black;
+  text-decoration: none; }
